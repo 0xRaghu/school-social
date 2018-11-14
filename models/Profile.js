@@ -12,7 +12,7 @@ const ProfileSchema = new Schema({
     required: true,
     max: 40
   },
-  company: {
+  school: {
     type: String
   },
   website: {
@@ -21,21 +21,18 @@ const ProfileSchema = new Schema({
   location: {
     type: String
   },
-  status: {
+  classes: {
     type: String,
     required: true
   },
-  skills: {
+  extracurricular: {
     type: [String],
     required: true
   },
-  bio: {
+  desc: {
     type: String
   },
-  githubusername: {
-    type: String
-  },
-  experience: [
+  competitions: [
     {
       title: {
         type: String,
@@ -48,46 +45,45 @@ const ProfileSchema = new Schema({
       location: {
         type: String
       },
-      from: {
+      onDate: {
         type: Date,
         required: true
       },
-      to: {
+      registertill: {
         type: Date
       },
-      current: {
+      opentilllast: {
         type: Boolean,
         default: false
       },
       description: {
         type: String
+      },
+      prize:{
+        type: String
+      },
+      fee:{
+        type: String
       }
     }
   ],
-  education: [
+  achievements: [
     {
-      school: {
+      competition: {
         type: String,
         required: true
       },
-      degree: {
+      studentname: {
         type: String,
         required: true
       },
-      fieldofstudy: {
+      prize: {
         type: String,
         required: true
       },
-      from: {
+      onDate: {
         type: Date,
         required: true
-      },
-      to: {
-        type: Date
-      },
-      current: {
-        type: Boolean,
-        default: false
       },
       description: {
         type: String
