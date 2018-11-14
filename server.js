@@ -16,6 +16,15 @@ app.use(bodyParser.json());
 //DB COnfig
 const db =  require('./config/keys').mongoURI;
 
+const cors = require('cors');
+
+//app.use(cors());
+
+app.use(cors({
+  origin: 'https://schoolsocial-raghu19.c9users.io:8081',
+  credentials: true
+}));
+
 //Connect to MongoDB using Mongoose
 mongoose
   .connect(db)
