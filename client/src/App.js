@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import jwt_decode from 'jwt-decode';
 import setAuthToken from './utils/setAuthToken';
 import { setCurrentUser } from './actions/authActions';
 import { Provider } from 'react-redux';
 import store from './store';
+import CreateProfile from './components/create-profile/CreateProfile';
+import EditProfile from './components/edit-profile/EditProfile';
+import AddCompetitions from './components/add-credentials/AddCompetitions';
+import AddAchievements from './components/add-credentials/AddAchievements';
 
 import './App.css';
 import Navbar from './components/layout/Navbar';
@@ -12,8 +16,12 @@ import Footer from './components/layout/Footer';
 import Landing from './components/layout/Landing';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
+import Dashboard from './components/dashboard/Dashboard';
+
+import PrivateRoute from './components/common/PrivateRoute';
 
 import { logoutUser } from './actions/authActions';
+import { clearCurrentProfile } from './actions/profileActions';
 
 //Check for TOken
 if(localStorage.jwtToken){
@@ -29,6 +37,7 @@ if(localStorage.jwtToken){
     //Logout the user
     store.dispatch(logoutUser());
     //To do: Clear Current Profile
+    store.dispatch(clearCurrentProfile());
     //Redirect to login
     window.location.herf = '/login';
   }
@@ -45,6 +54,37 @@ class App extends Component {
           <div className="container">
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
+            <Switch>
+            <PrivateRoute exact path="/dashboard" component={Dashboard} />
+            </Switch>
+            <Switch>
+                <PrivateRoute
+                  exact
+                  path="/create-profile"
+                  component={CreateProfile}
+                />
+              </Switch>
+              <Switch>
+                <PrivateRoute
+                  exact
+                  path="/edit-profile"
+                  component={EditProfile}
+                />
+              </Switch>
+              <Switch>
+                <PrivateRoute
+                  exact
+                  path="/add-competition"
+                  component={AddCompetitions}
+                />
+              </Switch>
+              <Switch>
+                <PrivateRoute
+                  exact
+                  path="/add-achievement"
+                  component={AddAchievements}
+                />
+              </Switch>
           </div>
         <Footer />
       </div>

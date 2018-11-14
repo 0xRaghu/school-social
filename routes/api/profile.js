@@ -168,7 +168,7 @@ app.post(
 // @desc    Add experience to profile
 // @access  Private
 app.post(
-  '/experience',
+  '/competition',
   passport.authenticate('jwt', { session: false }),
   (req, res) => {
     const { errors, isValid } = validateCompetitionsInput(req.body);
@@ -204,7 +204,7 @@ app.post(
 // @desc    Add education to profile
 // @access  Private
 app.post(
-  '/education',
+  '/achievement',
   passport.authenticate('jwt', { session: false }),
   (req, res) => {
     const { errors, isValid } = validateAchievementsInput(req.body);

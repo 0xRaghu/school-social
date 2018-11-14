@@ -6,7 +6,6 @@ module.exports = function validateProfileInput(data) {
 
   data.handle = !isEmpty(data.handle) ? data.handle : '';
   data.classes = !isEmpty(data.classes) ? data.classes : '';
-  data.extracurricular = !isEmpty(data.extracurricular) ? data.extracurricular : '';
 
   if (!Validator.isLength(data.handle, { min: 2, max: 40 })) {
     errors.handle = 'Handle needs to between 2 and 4 characters';
@@ -14,10 +13,6 @@ module.exports = function validateProfileInput(data) {
 
   if (Validator.isEmpty(data.handle)) {
     errors.handle = 'Profile handle is required';
-  }
-
-  if (Validator.isEmpty(data.classes)) {
-    errors.classes = 'Classes field is required';
   }
 
   if (Validator.isEmpty(data.classes)) {
