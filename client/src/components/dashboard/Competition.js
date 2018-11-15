@@ -6,7 +6,7 @@ import { deleteCompetition } from '../../actions/profileActions';
 
 class Experience extends Component {
   onDeleteClick(id) {
-    this.props.deleteExperience(id);
+    this.props.deleteCompetition(id);
   }
 
   render() {
