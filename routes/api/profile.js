@@ -236,7 +236,7 @@ app.post(
 // @desc    Delete experience from profile
 // @access  Private
 app.delete(
-  '/competitions/:comp_id',
+  '/competition/:comp_id',
   passport.authenticate('jwt', { session: false }),
   (req, res) => {
     Profile.findOne({ user: req.user.id })
@@ -260,7 +260,7 @@ app.delete(
 // @desc    Delete education from profile
 // @access  Private
 app.delete(
-  '/achievements/:ach_id',
+  '/achievement/:ach_id',
   passport.authenticate('jwt', { session: false }),
   (req, res) => {
     Profile.findOne({ user: req.user.id })
