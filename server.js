@@ -17,15 +17,6 @@ app.use(bodyParser.json());
 //DB COnfig
 const db =  require('./config/keys').mongoURI;
 
-const cors = require('cors');
-
-//app.use(cors());
-
-app.use(cors({
-  origin: 'https://schoolsocial-raghu19.c9users.io:8081',
-  credentials: true
-}));
-
 //Connect to MongoDB using Mongoose
 mongoose
   .connect(db)
@@ -40,8 +31,17 @@ require('./config/passport.js')(passport);
 
 //Use Routes
 app.use('/api/users', users);
+app.get('*',function (req, res) {
+        res.redirect('/');
+    });
 app.use('/api/profile', profile);
+app.get('*',function (req, res) {
+        res.redirect('/');
+    });
 app.use('/api/posts', posts);
+app.get('*',function (req, res) {
+        res.redirect('/');
+    });
 
 
 // Server static assets if in production
@@ -52,7 +52,7 @@ if (process.env.NODE_ENV === 'production') {
   app.get('*', (req, res) => {
     res.sendFile(__dirname+ '/client/build/index.html');
   });
-  app.get('/*', (req, res) => {
+  app.get('/', (req, res) => {
     res.sendFile(__dirname+ '/client/build/index.html');
   });
 }
