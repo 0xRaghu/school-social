@@ -10,12 +10,10 @@ class AddAchievements extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      school: '',
-      degree: '',
-      fieldofstudy: '',
-      from: '',
-      to: '',
-      current: false,
+      competition: '',
+      studentname: '',
+      prize: '',
+      onDate: '',
       description: '',
       errors: {},
       disabled: false
@@ -36,16 +34,14 @@ class AddAchievements extends Component {
     e.preventDefault();
 
     const eduData = {
-      school: this.state.school,
-      degree: this.state.degree,
-      fieldofstudy: this.state.fieldofstudy,
-      from: this.state.from,
-      to: this.state.to,
-      current: this.state.current,
+      competition: this.state.competition,
+      studentname: this.state.studentname,
+      prize: this.state.prize,
+      onDate: this.state.onDate,
       description: this.state.description
     };
 
-    this.props.AddAchievements(eduData, this.props.history);
+    this.props.addAchievements(eduData, this.props.history);
   }
 
   onChange(e) {
@@ -70,71 +66,48 @@ class AddAchievements extends Component {
               <Link to="/dashboard" className="btn btn-light">
                 Go Back
               </Link>
-              <h1 className="display-4 text-center">Add Education</h1>
+              <h1 className="display-4 text-center">Add Achievement</h1>
               <p className="lead text-center">
-                Add any school, bootcamp, etc that you have attended
+                Add anything that your school students have achieved
               </p>
               <small className="d-block pb-3">* = required fields</small>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
-                  placeholder="* School"
-                  name="school"
-                  value={this.state.school}
+                  placeholder="* Competition"
+                  name="competition"
+                  value={this.state.competition}
                   onChange={this.onChange}
-                  error={errors.school}
+                  error={errors.competition}
                 />
                 <TextFieldGroup
-                  placeholder="* Degree or Certification"
-                  name="degree"
-                  value={this.state.degree}
+                  placeholder="* Name of the Student(s)"
+                  name="studentname"
+                  value={this.state.studentname}
                   onChange={this.onChange}
-                  error={errors.degree}
+                  error={errors.studentname}
                 />
                 <TextFieldGroup
-                  placeholder="* Field of Study"
-                  name="fieldofstudy"
-                  value={this.state.fieldofstudy}
+                  placeholder="* Prize Won"
+                  name="prize"
+                  value={this.state.prize}
                   onChange={this.onChange}
-                  error={errors.fieldofstudy}
+                  error={errors.prize}
                 />
-                <h6>From Date</h6>
+                <h6>On Date</h6>
                 <TextFieldGroup
-                  name="from"
+                  name="onDate"
                   type="date"
-                  value={this.state.from}
+                  value={this.state.onDate}
                   onChange={this.onChange}
-                  error={errors.from}
+                  error={errors.onDate}
                 />
-                <h6>To Date</h6>
-                <TextFieldGroup
-                  name="to"
-                  type="date"
-                  value={this.state.to}
-                  onChange={this.onChange}
-                  error={errors.to}
-                  disabled={this.state.disabled ? 'disabled' : ''}
-                />
-                <div className="form-check mb-4">
-                  <input
-                    type="checkbox"
-                    className="form-check-input"
-                    name="current"
-                    value={this.state.current}
-                    checked={this.state.current}
-                    onChange={this.onCheck}
-                    id="current"
-                  />
-                  <label htmlFor="current" className="form-check-label">
-                    Current Job
-                  </label>
-                </div>
                 <TextAreaFieldGroup
-                  placeholder="Program Description"
+                  placeholder="Description"
                   name="description"
                   value={this.state.description}
                   onChange={this.onChange}
                   error={errors.description}
-                  info="Tell us about the program that you were in"
+                  info="Tell us about the student and competition"
                 />
                 <input
                   type="submit"
@@ -161,6 +134,6 @@ const mapStateToProps = state => ({
   errors: state.errors
 });
 
-export default connect(mapStateToProps, { AddAchievements })(
+export default connect(mapStateToProps, { addAchievements })(
   withRouter(AddAchievements)
 );

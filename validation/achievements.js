@@ -21,7 +21,7 @@ module.exports = function validateAchievementsInput(data) {
     errors.prize = 'Prize field is required';
   }
 
-  if (Validator.isEmpty(data.on)) {
+  if (Validator.isEmpty(data.onDate)) {
     errors.onDate = 'On date field is required';
   }
 

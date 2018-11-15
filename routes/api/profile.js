@@ -193,7 +193,7 @@ app.post(
       };
 
       // Add to exp array
-      profile.experience.unshift(newComp);
+      profile.competitions.unshift(newComp);
 
       profile.save().then(profile => res.json(profile));
     });

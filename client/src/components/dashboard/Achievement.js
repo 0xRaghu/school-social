@@ -12,15 +12,11 @@ class Education extends Component {
   render() {
     const achievement = this.props.achievements.map(edu => (
       <tr key={edu._id}>
-        <td>{edu.school}</td>
-        <td>{edu.degree}</td>
+        <td>{edu.competition}</td>
+        <td>{edu.studentname}</td>
+        <td>{edu.prize}</td>
         <td>
-          <Moment format="YYYY/MM/DD">{edu.from}</Moment> -
-          {edu.to === null ? (
-            ' Now'
-          ) : (
-            <Moment format="YYYY/MM/DD">{edu.to}</Moment>
-          )}
+          <Moment format="DD MMM YYYY">{edu.onDate}</Moment>
         </td>
         <td>
           <button
@@ -38,9 +34,10 @@ class Education extends Component {
         <table className="table">
           <thead>
             <tr>
-              <th>School</th>
-              <th>Degree</th>
-              <th>Years</th>
+              <th>Competition</th>
+              <th>Student Name</th>
+              <th>Prize</th>
+              <th>Date</th>
               <th />
             </tr>
             {achievement}

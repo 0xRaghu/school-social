@@ -1,4 +1,4 @@
- import React, { Component } from 'react';
+import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import TextFieldGroup from '../common/TextFieldGroup';
 import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
@@ -13,10 +13,12 @@ class AddCompetitions extends Component {
       company: '',
       title: '',
       location: '',
-      from: '',
-      to: '',
-      current: false,
+      onDate: '',
+      registertill: '',
+      opentilllast: false,
       description: '',
+      prize:'',
+      fee:'',
       errors: {},
       disabled: false
     };
@@ -39,13 +41,15 @@ class AddCompetitions extends Component {
       company: this.state.company,
       title: this.state.title,
       location: this.state.location,
-      from: this.state.from,
-      to: this.state.to,
-      current: this.state.current,
-      description: this.state.description
+      onDate: this.state.onDate,
+      registertill: this.state.registertill,
+      opentilllast: this.state.opentilllast,
+      description: this.state.description,
+      prize: this.state.prize,
+      fee: this.state.fee
     };
 
-    this.props.AddCompetitions(expData, this.props.history);
+    this.props.addCompetitions(expData, this.props.history);
   }
 
   onChange(e) {
@@ -70,21 +74,21 @@ class AddCompetitions extends Component {
               <Link to="/dashboard" className="btn btn-light">
                 Go Back
               </Link>
-              <h1 className="display-4 text-center">Add Experience</h1>
+              <h1 className="display-4 text-center">Add Competition</h1>
               <p className="lead text-center">
-                Add any job or position that you have had in the past or current
+                Add any Competition that your school is conducting
               </p>
               <small className="d-block pb-3">* = required fields</small>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
-                  placeholder="* Company"
+                  placeholder="* Conducted By?"
                   name="company"
                   value={this.state.company}
                   onChange={this.onChange}
                   error={errors.company}
                 />
                 <TextFieldGroup
-                  placeholder="* Job Title"
+                  placeholder="* Title"
                   name="title"
                   value={this.state.title}
                   onChange={this.onChange}
@@ -97,44 +101,60 @@ class AddCompetitions extends Component {
                   onChange={this.onChange}
                   error={errors.location}
                 />
-                <h6>From Date</h6>
+                <h6>On Date</h6>
                 <TextFieldGroup
-                  name="from"
+                  name="onDate"
                   type="date"
-                  value={this.state.from}
+                  value={this.state.onDate}
                   onChange={this.onChange}
-                  error={errors.from}
+                  error={errors.onDate}
                 />
-                <h6>To Date</h6>
+                <h6>Register Till</h6>
                 <TextFieldGroup
-                  name="to"
+                  name="registertill"
                   type="date"
-                  value={this.state.to}
+                  value={this.state.registertill}
                   onChange={this.onChange}
-                  error={errors.to}
+                  error={errors.registertill}
                   disabled={this.state.disabled ? 'disabled' : ''}
                 />
                 <div className="form-check mb-4">
                   <input
                     type="checkbox"
                     className="form-check-input"
-                    name="current"
-                    value={this.state.current}
-                    checked={this.state.current}
+                    name="opentilllast"
+                    value={this.state.opentilllast}
+                    checked={this.state.opentilllast}
                     onChange={this.onCheck}
-                    id="current"
+                    id="opentilllast"
                   />
-                  <label htmlFor="current" className="form-check-label">
-                    Current Job
+                  <label htmlFor="opentilllast" className="form-check-label">
+                    Can do Spot Registration
                   </label>
                 </div>
                 <TextAreaFieldGroup
-                  placeholder="Job Description"
+                  placeholder="Description"
                   name="description"
                   value={this.state.description}
                   onChange={this.onChange}
                   error={errors.description}
-                  info="Tell us about the the position"
+                  info="Tell us about the the competition"
+                />
+                <h6>Prize</h6>
+                <TextFieldGroup
+                  name="prize"
+                  type="text"
+                  value={this.state.prize}
+                  onChange={this.onChange}
+                  error={errors.prize}
+                />
+                <h6>Registration Fee</h6>
+                <TextFieldGroup
+                  name="fee"
+                  type="text"
+                  value={this.state.fee}
+                  onChange={this.onChange}
+                  error={errors.fee}
                 />
                 <input
                   type="submit"
@@ -161,6 +181,6 @@ const mapStateToProps = state => ({
   errors: state.errors
 });
 
-export default connect(mapStateToProps, { AddCompetitions })(
+export default connect(mapStateToProps, { addCompetitions })(
   withRouter(AddCompetitions)
 );

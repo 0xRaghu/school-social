@@ -15,12 +15,7 @@ class Experience extends Component {
         <td>{exp.company}</td>
         <td>{exp.title}</td>
         <td>
-          <Moment format="YYYY/MM/DD">{exp.from}</Moment> -
-          {exp.to === null ? (
-            ' Now'
-          ) : (
-            <Moment format="YYYY/MM/DD">{exp.to}</Moment>
-          )}
+          <Moment format="DD MMM YYYY">{exp.onDate}</Moment>
         </td>
         <td>
           <button
@@ -38,9 +33,9 @@ class Experience extends Component {
         <table className="table">
           <thead>
             <tr>
-              <th>Company</th>
-              <th>Title</th>
-              <th>Years</th>
+              <th>Conducted By</th>
+              <th>Name</th>
+              <th>Date</th>
               <th />
             </tr>
             {competition}

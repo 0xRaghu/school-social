@@ -1,0 +1,558 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/nix/store/ajr6i77s89gjfjm59aazc16b5rvb39n7-nodejs-4.3.1/bin/node',
+1 verbose cli   '/mnt/shared/sbin/npm',
+1 verbose cli   'i',
+1 verbose cli   'node' ]
+2 info using npm@2.14.12
+3 info using node@v4.3.1
+4 verbose install initial load of /home/ubuntu/workspace/package.json
+5 warn package.json school-social@0.0.0 No repository field.
+6 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/abbrev/package.json
+7 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/active-x-obfuscator/package.json
+8 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/ansi-align/package.json
+9 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/ansi-regex/package.json
+10 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/ansi-styles/package.json
+11 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/anymatch/package.json
+12 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/arr-diff/package.json
+13 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/arr-flatten/package.json
+14 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/arr-union/package.json
+15 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/array-unique/package.json
+16 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/assign-symbols/package.json
+17 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/async/package.json
+18 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/async-each/package.json
+19 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/atob/package.json
+20 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/balanced-match/package.json
+21 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/base/package.json
+22 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/base64id/package.json
+23 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/bcryptjs/package.json
+24 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/binary-extensions/package.json
+25 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/bluebird/package.json
+26 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/blueimp-md5/package.json
+27 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/body-parser/package.json
+28 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/boxen/package.json
+29 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/brace-expansion/package.json
+30 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/braces/package.json
+31 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/bson/package.json
+32 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/buffer-crc32/package.json
+33 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/buffer-equal-constant-time/package.json
+34 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/builtin-modules/package.json
+35 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/bytes/package.json
+36 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/cache-base/package.json
+37 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/camelcase/package.json
+38 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/capture-stack-trace/package.json
+39 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/chalk/package.json
+40 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/chokidar/package.json
+41 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/ci-info/package.json
+42 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/class-utils/package.json
+43 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/cli-boxes/package.json
+44 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/cliui/package.json
+45 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/code-point-at/package.json
+46 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/collection-visit/package.json
+47 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/color-convert/package.json
+48 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/color-name/package.json
+49 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/commander/package.json
+50 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/component-emitter/package.json
+51 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/concat-map/package.json
+52 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/concurrently/package.json
+53 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/configstore/package.json
+54 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/connect/package.json
+55 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/content-type/package.json
+56 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/cookie/package.json
+57 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/cookie-signature/package.json
+58 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/copy-descriptor/package.json
+59 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/core-util-is/package.json
+60 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/cors/package.json
+61 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/create-error-class/package.json
+62 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/cross-spawn/package.json
+63 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/crypto-random-string/package.json
+64 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/date-fns/package.json
+65 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/debug/package.json
+66 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/decamelize/package.json
+67 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/decode-uri-component/package.json
+68 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/deep-extend/package.json
+69 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/define-property/package.json
+70 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/depd/package.json
+71 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/dot-prop/package.json
+72 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/duplexer/package.json
+73 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/duplexer3/package.json
+74 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/ecdsa-sig-formatter/package.json
+75 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/ee-first/package.json
+76 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/email-validator/package.json
+77 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/error-ex/package.json
+78 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/escape-string-regexp/package.json
+79 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/event-stream/package.json
+80 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/execa/package.json
+81 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/expand-brackets/package.json
+82 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/express/package.json
+83 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/extend-shallow/package.json
+84 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/extglob/package.json
+85 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/fill-range/package.json
+86 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/find-up/package.json
+87 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/flatmap-stream/package.json
+88 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/for-in/package.json
+89 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/formidable/package.json
+90 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/fragment-cache/package.json
+91 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/fresh/package.json
+92 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/from/package.json
+93 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/get-caller-file/package.json
+94 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/get-stream/package.json
+95 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/get-value/package.json
+96 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/glob-parent/package.json
+97 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/global-dirs/package.json
+98 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/got/package.json
+99 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/graceful-fs/package.json
+100 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gravatar/package.json
+101 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/has-flag/package.json
+102 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/has-value/package.json
+103 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/has-values/package.json
+104 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/hosted-git-info/package.json
+105 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/http-errors/package.json
+106 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/iconv-lite/package.json
+107 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/ignore-by-default/package.json
+108 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/import-lazy/package.json
+109 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/imurmurhash/package.json
+110 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/inherits/package.json
+111 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/ini/package.json
+112 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/invert-kv/package.json
+113 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-accessor-descriptor/package.json
+114 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-arrayish/package.json
+115 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-binary-path/package.json
+116 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-buffer/package.json
+117 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-builtin-module/package.json
+118 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-ci/package.json
+119 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-data-descriptor/package.json
+120 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-descriptor/package.json
+121 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-extendable/package.json
+122 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-extglob/package.json
+123 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-fullwidth-code-point/package.json
+124 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-glob/package.json
+125 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-installed-globally/package.json
+126 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-npm/package.json
+127 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-number/package.json
+128 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-obj/package.json
+129 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-path-inside/package.json
+130 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-plain-object/package.json
+131 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-redirect/package.json
+132 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-retry-allowed/package.json
+133 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-stream/package.json
+134 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-utf8/package.json
+135 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/is-windows/package.json
+136 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/isarray/package.json
+137 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/isexe/package.json
+138 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/isobject/package.json
+139 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/json-parse-better-errors/package.json
+140 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/jsonwebtoken/package.json
+141 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/jwa/package.json
+142 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/jws/package.json
+143 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/kareem/package.json
+144 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/kind-of/package.json
+145 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/latest-version/package.json
+146 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/lcid/package.json
+147 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/load-json-file/package.json
+148 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/locate-path/package.json
+149 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/lodash/package.json
+150 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/lodash.debounce/package.json
+151 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/lodash.get/package.json
+152 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/lodash.includes/package.json
+153 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/lodash.isboolean/package.json
+154 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/lodash.isinteger/package.json
+155 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/lodash.isnumber/package.json
+156 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/lodash.isplainobject/package.json
+157 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/lodash.isstring/package.json
+158 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/lodash.once/package.json
+159 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/lowercase-keys/package.json
+160 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/lru-cache/package.json
+161 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/make-dir/package.json
+162 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/map-age-cleaner/package.json
+163 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/map-cache/package.json
+164 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/map-stream/package.json
+165 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/map-visit/package.json
+166 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/media-typer/package.json
+167 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mem/package.json
+168 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/memory-pager/package.json
+169 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/methods/package.json
+170 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/micromatch/package.json
+171 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mime/package.json
+172 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mime-db/package.json
+173 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mime-types/package.json
+174 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mimic-fn/package.json
+175 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/minimatch/package.json
+176 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/minimist/package.json
+177 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mixin-deep/package.json
+178 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mkdirp/package.json
+179 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mongodb/package.json
+180 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mongodb-core/package.json
+181 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mongoose/package.json
+182 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mongoose-legacy-pluralize/package.json
+183 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mpath/package.json
+184 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mquery/package.json
+185 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/ms/package.json
+186 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/nan/package.json
+187 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/nanomatch/package.json
+188 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/nice-try/package.json
+189 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/nodemon/package.json
+190 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/nopt/package.json
+191 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/normalize-package-data/package.json
+192 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/normalize-path/package.json
+193 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/npm/package.json
+194 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/npm-run-path/package.json
+195 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/number-is-nan/package.json
+196 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/object-assign/package.json
+197 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/object-copy/package.json
+198 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/object-visit/package.json
+199 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/object.pick/package.json
+200 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/on-finished/package.json
+201 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/options/package.json
+202 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/os-locale/package.json
+203 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/p-defer/package.json
+204 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/p-finally/package.json
+205 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/p-is-promise/package.json
+206 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/p-limit/package.json
+207 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/p-locate/package.json
+208 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/p-try/package.json
+209 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/package-json/package.json
+210 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/parse-json/package.json
+211 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/pascalcase/package.json
+212 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/passport/package.json
+213 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/passport-jwt/package.json
+214 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/passport-strategy/package.json
+215 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/path-dirname/package.json
+216 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/path-exists/package.json
+217 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/path-is-absolute/package.json
+218 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/path-is-inside/package.json
+219 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/path-key/package.json
+220 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/path-type/package.json
+221 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/pause/package.json
+222 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/pause-stream/package.json
+223 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/pify/package.json
+224 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/pinkie/package.json
+225 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/pinkie-promise/package.json
+226 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/policyfile/package.json
+227 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/posix-character-classes/package.json
+228 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/prepend-http/package.json
+229 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/process-nextick-args/package.json
+230 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/ps-tree/package.json
+231 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/pseudomap/package.json
+232 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/pstree.remy/package.json
+233 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/qs/package.json
+234 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/querystring/package.json
+235 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/range-parser/package.json
+236 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/raw-body/package.json
+237 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/rc/package.json
+238 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/read-pkg/package.json
+239 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/read-pkg-up/package.json
+240 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/readable-stream/package.json
+241 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/readdirp/package.json
+242 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/redis/package.json
+243 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/regex-not/package.json
+244 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/regexp-clone/package.json
+245 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/registry-auth-token/package.json
+246 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/registry-url/package.json
+247 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/remove-trailing-separator/package.json
+248 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/repeat-element/package.json
+249 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/repeat-string/package.json
+250 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/require-directory/package.json
+251 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/require-main-filename/package.json
+252 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/require_optional/package.json
+253 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/resolve-from/package.json
+254 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/resolve-url/package.json
+255 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/ret/package.json
+256 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/rxjs/package.json
+257 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/safe-buffer/package.json
+258 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/safe-regex/package.json
+259 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/safer-buffer/package.json
+260 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/saslprep/package.json
+261 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/semver/package.json
+262 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/semver-diff/package.json
+263 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/send/package.json
+264 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/set-blocking/package.json
+265 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/set-value/package.json
+266 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/setprototypeof/package.json
+267 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/shebang-command/package.json
+268 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/shebang-regex/package.json
+269 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/signal-exit/package.json
+270 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/sliced/package.json
+271 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/snapdragon/package.json
+272 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/snapdragon-node/package.json
+273 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/snapdragon-util/package.json
+274 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/socket.io/package.json
+275 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/socket.io-client/package.json
+276 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/source-map/package.json
+277 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/source-map-resolve/package.json
+278 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/source-map-url/package.json
+279 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/sparse-bitfield/package.json
+280 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/spawn-command/package.json
+281 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/spdx-correct/package.json
+282 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/spdx-exceptions/package.json
+283 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/spdx-expression-parse/package.json
+284 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/spdx-license-ids/package.json
+285 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/split/package.json
+286 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/split-string/package.json
+287 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/static-extend/package.json
+288 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/statuses/package.json
+289 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/stream-combiner/package.json
+290 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/string-width/package.json
+291 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/string_decoder/package.json
+292 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/strip-ansi/package.json
+293 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/strip-bom/package.json
+294 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/strip-eof/package.json
+295 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/strip-json-comments/package.json
+296 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/supports-color/package.json
+297 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/term-size/package.json
+298 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/through/package.json
+299 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/timed-out/package.json
+300 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/tinycolor/package.json
+301 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/to-object-path/package.json
+302 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/to-regex/package.json
+303 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/to-regex-range/package.json
+304 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/touch/package.json
+305 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/tree-kill/package.json
+306 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/tslib/package.json
+307 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/type-is/package.json
+308 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/uglify-js/package.json
+309 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/undefsafe/package.json
+310 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/union-value/package.json
+311 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/unique-string/package.json
+312 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/unpipe/package.json
+313 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/unset-value/package.json
+314 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/unzip-response/package.json
+315 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/upath/package.json
+316 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/update-notifier/package.json
+317 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/urix/package.json
+318 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/url-parse-lax/package.json
+319 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/use/package.json
+320 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/util-deprecate/package.json
+321 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/validate-npm-package-license/package.json
+322 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/validator/package.json
+323 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/vary/package.json
+324 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/which/package.json
+325 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/which-module/package.json
+326 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/widest-line/package.json
+327 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/wrap-ansi/package.json
+328 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/write-file-atomic/package.json
+329 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/ws/package.json
+330 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/xdg-basedir/package.json
+331 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/xmlhttprequest/package.json
+332 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/xregexp/package.json
+333 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/y18n/package.json
+334 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/yallist/package.json
+335 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/yargs/package.json
+336 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/yargs-parser/package.json
+337 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/zeparser/package.json
+338 info package.json active-x-obfuscator@0.0.1 No license field.
+339 info package.json async@0.2.10 No license field.
+340 info package.json base64id@0.1.0 No license field.
+341 info package.json buffer-crc32@0.2.1 No license field.
+342 info package.json commander@0.6.1 No license field.
+343 info package.json connect@2.7.11 No license field.
+344 info package.json cookie@0.1.0 No license field.
+345 info package.json cookie-signature@1.0.1 No repository field.
+346 info package.json cookie-signature@1.0.1 No license field.
+347 info package.json duplexer@0.1.1 No license field.
+348 info package.json express@3.2.6 No license field.
+349 info package.json formidable@1.0.14 No license field.
+350 info package.json fresh@0.1.0 No repository field.
+351 info package.json fresh@0.1.0 No license field.
+352 info package.json methods@0.0.1 No repository field.
+353 info package.json mime@1.2.11 No license field.
+354 info package.json mkdirp@0.3.4 license should be a valid SPDX license expression
+355 info package.json nopt@1.0.10 license should be a valid SPDX license expression
+356 info package.json options@0.0.6 No license field.
+357 info package.json pause@0.0.1 No repository field.
+358 info package.json pause@0.0.1 No license field.
+359 info package.json pstree.remy@1.1.0 No repository field.
+360 info package.json pause-stream@0.0.11 license should be a valid SPDX license expression
+361 info package.json range-parser@0.0.4 No repository field.
+362 info package.json range-parser@0.0.4 No license field.
+363 info package.json policyfile@0.0.4 'repositories' (plural) Not supported. Please pick one as the 'repository' field
+364 info package.json policyfile@0.0.4 No license field.
+365 info package.json redis@0.7.3 No license field.
+366 info package.json send@0.1.0 No repository field.
+367 info package.json send@0.1.0 No license field.
+368 info package.json socket.io@0.9.19 No license field.
+369 info package.json socket.io-client@0.9.16 No license field.
+370 info package.json string_decoder@1.1.1 string_decoder is also the name of a node core module.
+371 info package.json tinycolor@0.0.1 No license field.
+372 info package.json uglify-js@1.2.5 No license field.
+373 info package.json ws@0.4.32 No license field.
+374 info package.json xmlhttprequest@1.4.2 No license field.
+375 info package.json zeparser@0.0.5 No license field.
+376 info package.json email-validator@1.2.3 No license field.
+377 info package.json passport-strategy@1.0.0 No license field.
+378 info package.json querystring@0.2.0 querystring is also the name of a node core module.
+379 info package.json querystring@0.2.0 No license field.
+380 verbose readDependencies loading dependencies from /home/ubuntu/workspace/package.json
+381 silly cache add args [ 'node', null ]
+382 verbose cache add spec node
+383 silly cache add parsed spec Result {
+383 silly cache add   raw: 'node',
+383 silly cache add   scope: null,
+383 silly cache add   name: 'node',
+383 silly cache add   rawSpec: '',
+383 silly cache add   spec: 'latest',
+383 silly cache add   type: 'tag' }
+384 silly addNamed node@latest
+385 verbose addNamed "latest" is being treated as a dist-tag for node
+386 info addNameTag [ 'node', 'latest' ]
+387 silly mapToRegistry name node
+388 silly mapToRegistry using default registry
+389 silly mapToRegistry registry https://registry.npmjs.org/
+390 silly mapToRegistry uri https://registry.npmjs.org/node
+391 verbose addNameTag registry:https://registry.npmjs.org/node not in flight; fetching
+392 verbose request uri https://registry.npmjs.org/node
+393 verbose request no auth needed
+394 info attempt registry request try #1 at 00:43:41
+395 verbose request id 8514e22d3b213abb
+396 http request GET https://registry.npmjs.org/node
+397 http 200 https://registry.npmjs.org/node
+398 verbose headers { date: 'Thu, 15 Nov 2018 00:43:41 GMT',
+398 verbose headers   'content-type': 'application/json',
+398 verbose headers   'transfer-encoding': 'chunked',
+398 verbose headers   connection: 'keep-alive',
+398 verbose headers   'set-cookie': [ '__cfduid=d43aaf23fb8da6975a1546c022ecdb1471542242621; expires=Fri, 15-Nov-19 00:43:41 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+398 verbose headers   'cf-cache-status': 'HIT',
+398 verbose headers   'cache-control': 'max-age=300',
+398 verbose headers   'cf-ray': '479daf5e18ac4614-TPE',
+398 verbose headers   etag: 'W/"d015bcff2346759dad455b5b296c7bee"',
+398 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+398 verbose headers   'last-modified': 'Sun, 11 Nov 2018 15:35:18 GMT',
+398 verbose headers   vary: 'accept-encoding, accept',
+398 verbose headers   'x-amz-meta-rev': '436-a14e6ff9cb1bb47fae6d03142d5edb02',
+398 verbose headers   server: 'cloudflare',
+398 verbose headers   'content-encoding': 'gzip' }
+399 silly get cb [ 200,
+399 silly get   { date: 'Thu, 15 Nov 2018 00:43:41 GMT',
+399 silly get     'content-type': 'application/json',
+399 silly get     'transfer-encoding': 'chunked',
+399 silly get     connection: 'keep-alive',
+399 silly get     'set-cookie': [ '__cfduid=d43aaf23fb8da6975a1546c022ecdb1471542242621; expires=Fri, 15-Nov-19 00:43:41 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+399 silly get     'cf-cache-status': 'HIT',
+399 silly get     'cache-control': 'max-age=300',
+399 silly get     'cf-ray': '479daf5e18ac4614-TPE',
+399 silly get     etag: 'W/"d015bcff2346759dad455b5b296c7bee"',
+399 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+399 silly get     'last-modified': 'Sun, 11 Nov 2018 15:35:18 GMT',
+399 silly get     vary: 'accept-encoding, accept',
+399 silly get     'x-amz-meta-rev': '436-a14e6ff9cb1bb47fae6d03142d5edb02',
+399 silly get     server: 'cloudflare',
+399 silly get     'content-encoding': 'gzip' } ]
+400 verbose get saving node to /home/ubuntu/.npm/registry.npmjs.org/node/.cache.json
+401 silly addNameTag next cb for node with tag latest
+402 silly addNamed node@11.1.0
+403 verbose addNamed "11.1.0" is a plain semver version for node
+404 silly mapToRegistry name node
+405 silly mapToRegistry using default registry
+406 silly mapToRegistry registry https://registry.npmjs.org/
+407 silly mapToRegistry uri https://registry.npmjs.org/node
+408 verbose addRemoteTarball https://registry.npmjs.org/node/-/node-11.1.0.tgz not in flight; adding
+409 verbose addRemoteTarball [ 'https://registry.npmjs.org/node/-/node-11.1.0.tgz',
+409 verbose addRemoteTarball   '2ba9e4184007841b42d17fd2fe1dbaa36467db02' ]
+410 info retry fetch attempt 1 at 00:43:41
+411 info attempt registry request try #1 at 00:43:41
+412 http fetch GET https://registry.npmjs.org/node/-/node-11.1.0.tgz
+413 http fetch 200 https://registry.npmjs.org/node/-/node-11.1.0.tgz
+414 silly fetchAndShaCheck shasum 2ba9e4184007841b42d17fd2fe1dbaa36467db02
+415 verbose addTmpTarball /tmp/npm-4149-ca845349/registry.npmjs.org/node/-/node-11.1.0.tgz not in flight; adding
+416 verbose addTmpTarball already have metadata; skipping unpack for node@11.1.0
+417 silly cache afterAdd node@11.1.0
+418 verbose afterAdd /home/ubuntu/.npm/node/11.1.0/package/package.json not in flight; writing
+419 verbose afterAdd /home/ubuntu/.npm/node/11.1.0/package/package.json written
+420 silly install resolved [ { name: 'node',
+420 silly install resolved     version: '11.1.0',
+420 silly install resolved     description: 'node',
+420 silly install resolved     main: 'index.js',
+420 silly install resolved     keywords: [ 'runtime' ],
+420 silly install resolved     repository:
+420 silly install resolved      { type: 'git',
+420 silly install resolved        url: 'git+https://github.com/aredridel/node-bin-gen.git' },
+420 silly install resolved     scripts: { preinstall: 'node installArchSpecificPackage' },
+420 silly install resolved     bin: { node: 'bin/node' },
+420 silly install resolved     dependencies: { 'node-bin-setup': '^1.0.0' },
+420 silly install resolved     license: 'ISC',
+420 silly install resolved     author: '',
+420 silly install resolved     engines: { npm: '>=5.0.0' },
+420 silly install resolved     bugs: { url: 'https://github.com/aredridel/node-bin-gen/issues' },
+420 silly install resolved     homepage: 'https://github.com/aredridel/node-bin-gen#readme',
+420 silly install resolved     _id: 'node@11.1.0',
+420 silly install resolved     _npmVersion: '6.4.1',
+420 silly install resolved     _nodeVersion: '10.13.0',
+420 silly install resolved     _npmUser: { name: 'aredridel', email: 'aredridel@dinhe.net' },
+420 silly install resolved     dist:
+420 silly install resolved      { integrity: 'sha512-m5XGeSfe8FnE36L5DQtoi/zH0HkXUITOatp8VG0AUN4sRmrXKRhFhCw/thMaG2GiKuNGqfqKlNCucGcc+BjDlQ==',
+420 silly install resolved        shasum: '2ba9e4184007841b42d17fd2fe1dbaa36467db02',
+420 silly install resolved        tarball: 'https://registry.npmjs.org/node/-/node-11.1.0.tgz',
+420 silly install resolved        fileCount: 3,
+420 silly install resolved        unpackedSize: 1475,
+420 silly install resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb6EwyCRA9TVsSAnZWagAAVZcP/1oAaHeesWONKcnTQ7QK\nPng4rgIHhHNew13WqQXW12M0v7GgVN0hAC1CBR77L/DUHSPGZgcm3XPQEHX+\n+Q74zUr1zHNQrk/x7ZutcPnrLFVrNB8OWN26xwrxVpiYOVsLu1N/bqhNdFjh\nDYymLGHE06Y9qioi7AEHa+NaIsgaY7QbTtrNCOjCCl0MLV/6to+cl19Rejl/\nUxsIlgusueLgUyebRRdkcNRPDiB6Tl8jMgw6RXVVp8QwJ4kX/yfhOCkGgf31\nWPZUV4M59jHC53JSPSnh4QF5niRGUf4MWIAuSwEN4parTnFO7lD8jfisO2v1\nG01dppjAwt2Z49+PoJyQ+tT0S+XobHIPHjf2ckUqMFi3l25OvpLL1bVEt5fV\nB6vVzaj6FQOa/7XeuNw9rPJZpvYNSxIrjoOFWOP5GMJ3T7laj/ZrkXPcRB67\n7e+0ZgEPz6utSShpquSN5mbK8OZSQvmLFJUQZAy9MN8T6Bpl7++d/D1zpRRh\ngAW4Kyhr1ENFUOi3OK/ne4/cMTbGxJkxeDDYiUolbW3Gn+VwOv5wAlR2VRuN\nFhXhATUGRS+GbGslzt6r2gDjoI0qldbvdWhUA1UNBgwPuLKJ3J3vsdthbltv\nHZP8CP3bJVKwU4tTQ+iAyPd9TFySUhn4UyxQ+if6keLWGqWu8GGxS145MJSh\nMKCN\r\n=WeO4\r\n-----END PGP SIGNATURE-----\r\n' },
+420 silly install resolved     maintainers: [ [Object], [Object] ],
+420 silly install resolved     directories: {},
+420 silly install resolved     _npmOperationalInternal:
+420 silly install resolved      { host: 's3://npm-registry-packages',
+420 silly install resolved        tmp: 'tmp/node_11.1.0_1541950513768_0.8354796725643623' },
+420 silly install resolved     _hasShrinkwrap: false,
+420 silly install resolved     _shasum: '2ba9e4184007841b42d17fd2fe1dbaa36467db02',
+420 silly install resolved     _resolved: 'https://registry.npmjs.org/node/-/node-11.1.0.tgz',
+420 silly install resolved     _from: 'node@latest' } ]
+421 info install node@11.1.0 into /home/ubuntu/workspace
+422 info installOne node@11.1.0
+423 verbose installOne of node to /home/ubuntu/workspace not in flight; installing
+424 verbose lock using /home/ubuntu/.npm/_locks/node-fa8119f209316c33.lock for /home/ubuntu/workspace/node_modules/node
+425 silly install write writing node 11.1.0 to /home/ubuntu/workspace/node_modules/node
+426 verbose unbuild node_modules/node
+427 silly gentlyRm /home/ubuntu/workspace/node_modules/node is being purged from base /home/ubuntu/workspace
+428 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/node
+429 verbose tar unpack /home/ubuntu/.npm/node/11.1.0/package.tgz
+430 verbose tar unpacking to /home/ubuntu/workspace/node_modules/node
+431 silly gentlyRm /home/ubuntu/workspace/node_modules/node is being purged
+432 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/node
+433 silly gunzTarPerm modes [ '755', '644' ]
+434 silly gunzTarPerm extractEntry package.json
+435 silly gunzTarPerm extractEntry installArchSpecificPackage.js
+436 silly gunzTarPerm extractEntry README.md
+437 verbose write writing to /home/ubuntu/workspace/node_modules/node/package.json
+438 info preinstall node@11.1.0
+439 verbose unsafe-perm in lifecycle true
+440 info node@11.1.0 Failed to exec preinstall script
+441 verbose unlock done using /home/ubuntu/.npm/_locks/node-fa8119f209316c33.lock for /home/ubuntu/workspace/node_modules/node
+442 verbose stack Error: node@11.1.0 preinstall: `node installArchSpecificPackage`
+442 verbose stack Exit status 1
+442 verbose stack     at EventEmitter.<anonymous> (/nix/store/ajr6i77s89gjfjm59aazc16b5rvb39n7-nodejs-4.3.1/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+442 verbose stack     at emitTwo (events.js:87:13)
+442 verbose stack     at EventEmitter.emit (events.js:172:7)
+442 verbose stack     at ChildProcess.<anonymous> (/nix/store/ajr6i77s89gjfjm59aazc16b5rvb39n7-nodejs-4.3.1/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+442 verbose stack     at emitTwo (events.js:87:13)
+442 verbose stack     at ChildProcess.emit (events.js:172:7)
+442 verbose stack     at maybeClose (internal/child_process.js:821:16)
+442 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+443 verbose pkgid node@11.1.0
+444 verbose cwd /home/ubuntu/workspace
+445 error Linux 4.9.120-c9
+446 error argv "/nix/store/ajr6i77s89gjfjm59aazc16b5rvb39n7-nodejs-4.3.1/bin/node" "/mnt/shared/sbin/npm" "i" "node"
+447 error node v4.3.1
+448 error npm  v2.14.12
+449 error code ELIFECYCLE
+450 error node@11.1.0 preinstall: `node installArchSpecificPackage`
+450 error Exit status 1
+451 error Failed at the node@11.1.0 preinstall script 'node installArchSpecificPackage'.
+451 error This is most likely a problem with the node package,
+451 error not with npm itself.
+451 error Tell the author that this fails on your system:
+451 error     node installArchSpecificPackage
+451 error You can get their info via:
+451 error     npm owner ls node
+451 error There is likely additional logging output above.
+452 verbose exit [ 1, true ]
+453 verbose unbuild node_modules/node
+454 info preuninstall node@11.1.0
+455 info uninstall node@11.1.0
+456 verbose unbuild rmStuff node@11.1.0 from /home/ubuntu/workspace/node_modules
+457 silly gentlyRm /home/ubuntu/workspace/node_modules/.bin/node is being gently removed
+458 silly gentlyRm verifying /home/ubuntu/workspace is an npm working directory
+459 silly gentlyRm containing path /home/ubuntu/workspace is under npm's control, in /home/ubuntu/workspace
+460 silly gentlyRm deletion target /home/ubuntu/workspace/node_modules/.bin/node is under /home/ubuntu/workspace
+461 verbose gentlyRm vacuuming from /home/ubuntu/workspace/node_modules/.bin/node up to /home/ubuntu/workspace
+462 info postuninstall node@11.1.0
+463 silly gentlyRm /home/ubuntu/workspace/node_modules/node is being purged from base /home/ubuntu/workspace
+464 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/node
+465 silly vacuum-fs purging /home/ubuntu/workspace/node_modules/node
+466 silly vacuum-fs quitting because other entries in /home/ubuntu/workspace/node_modules
