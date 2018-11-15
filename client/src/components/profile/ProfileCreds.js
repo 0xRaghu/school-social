@@ -28,6 +28,20 @@ class ProfileCreds extends Component {
             </span>
           )}
         </p>
+        <p>
+          {comp.prize === '' ? null : (
+            <span>
+              <strong>Prize: </strong> {comp.prize}
+            </span>
+          )}
+        </p>
+        <p>
+          {comp.fee === '' ? null : (
+            <span>
+              <strong>Registration Fee: </strong> {comp.fee}
+            </span>
+          )}
+        </p>
       </li>
     ));
 
