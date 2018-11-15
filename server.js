@@ -29,15 +29,14 @@ app.use(passport.initialize());
 //Passport Config
 require('./config/passport.js')(passport);
 
-
-app.get('*',function (req, res) {
-        res.redirect('/');
-    });
-
 //Use Routes
 app.use('/api/users', users);
 app.use('/api/profile', profile);
 app.use('/api/posts', posts);
+
+app.get('*',function (req, res) {
+        res.redirect('/');
+    });
 
 // Server static assets if in production
 if (process.env.NODE_ENV === 'production') {
