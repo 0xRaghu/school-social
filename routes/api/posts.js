@@ -43,14 +43,8 @@ app.get('/:id', (req,res) => {
 // @desc        Create Posts
 // @access      private
 
-app.post('/', passport.authenticate('jwt', {Session:false}), (req,res) => {
+app.post('/', passport.authenticate('jwt', {session:false}), (req,res) => {
     const {errors, isEmpty} = validatePostInput(req.body);
-    
-    //Check Validation
-    if(!isValid){
-        //If any errors send 400 with error object
-        res.status(400).json(errors);
-    }
     const newPost = new Post({
         text: req.body.text,
         name: req.body.name,
@@ -65,7 +59,7 @@ app.post('/', passport.authenticate('jwt', {Session:false}), (req,res) => {
 // @desc        delete posts by id
 // @access      private
 
-app.delete('/:id', passport.authenticate('jwt', {Session:false}), (req,res) => {
+app.delete('/:id', passport.authenticate('jwt', {session:false}), (req,res) => {
     Profile.findOne({user: req.user.id})
         .then(profile => {
             Post.findById(req.params.id)
@@ -85,7 +79,7 @@ app.delete('/:id', passport.authenticate('jwt', {Session:false}), (req,res) => {
 // @desc        Like posts by id
 // @access      private
 
-app.post('/like/:id', passport.authenticate('jwt', {Session:false}), (req,res) => {
+app.post('/like/:id', passport.authenticate('jwt', {session:false}), (req,res) => {
     Profile.findOne({user: req.user.id})
         .then(profile => {
             Post.findById(req.params.id)
@@ -105,7 +99,7 @@ app.post('/like/:id', passport.authenticate('jwt', {Session:false}), (req,res) =
 // @desc        Unlike posts by id
 // @access      private
 
-app.post('/unlike/:id', passport.authenticate('jwt', {Session:false}), (req,res) => {
+app.post('/unlike/:id', passport.authenticate('jwt', {session:false}), (req,res) => {
     Profile.findOne({user: req.user.id})
         .then(profile => {
             Post.findById(req.params.id)
@@ -131,14 +125,8 @@ app.post('/unlike/:id', passport.authenticate('jwt', {Session:false}), (req,res)
 // @desc        Comment posts by id
 // @access      private
 
-app.post('/comment/:id', passport.authenticate('jwt', {Session:false}), (req,res) => {
+app.post('/comment/:id', passport.authenticate('jwt', {session:false}), (req,res) => {
     const {errors, isEmpty} = validatePostInput(req.body);
-    
-    //Check Validation
-    if(!isValid){
-        //If any errors send 400 with error object
-        res.status(400).json(errors);
-    }
     Profile.findOne({user: req.user.id})
         .then(profile => {
             Post.findById(req.params.id)

@@ -59,7 +59,7 @@ class AddCompetitions extends Component {
   onCheck(e) {
     this.setState({
       disabled: !this.state.disabled,
-      current: !this.state.current
+      opentilllast: !this.state.opentilllast
     });
   }
 

@@ -126,8 +126,8 @@ app.post(
     if (req.body.desc) profileFields.desc = req.body.desc;
     if (req.body.classes) profileFields.classes = req.body.classes;
     // Skills - Spilt into array
-    if (typeof req.body.classes !== 'undefined') {
-      profileFields.classes = req.body.classes.split(',');
+    if (typeof req.body.extracurricular !== 'undefined') {
+      profileFields.extracurricular = req.body.extracurricular.split(',');
     }
 
     // Social

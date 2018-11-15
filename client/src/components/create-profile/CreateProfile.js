@@ -48,7 +48,7 @@ class CreateProfile extends Component {
       location: this.state.location,
       classes: this.state.classes,
       extracurricular: this.state.extracurricular,
-      desc: this.state.bio,
+      desc: this.state.desc,
       twitter: this.state.twitter,
       facebook: this.state.facebook,
       linkedin: this.state.linkedin,

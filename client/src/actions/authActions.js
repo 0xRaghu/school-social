@@ -6,7 +6,7 @@ import jwt_decode from 'jwt-decode';
 //Register user
 
 export const registerUser = (userData, history) => dispatch => {
-    axios.post('https://schoolsocial-raghu19.c9users.io/api/users/register', userData)
+    axios.post('/api/users/register', userData)
             .then(res => history.push('/login'))
             .catch(err => 
                 dispatch({
@@ -18,7 +18,7 @@ export const registerUser = (userData, history) => dispatch => {
 
 //Login - Get user TOken
 export const loginUser = userData => dispatch => {
-  axios.post('https://schoolsocial-raghu19.c9users.io/api/users/login', userData)
+  axios.post('/api/users/login', userData)
     .then(res => {
         //Save to local storage
         const { token } = res.data;

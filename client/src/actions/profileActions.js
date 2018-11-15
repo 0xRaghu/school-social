@@ -1,11 +1,11 @@
 import axios from 'axios';
-import {GET_PROFILE , PROFILE_LOADING, CLEAR_CURRENT_PROFILE, GET_ERRORS, SET_CURRENT_USER} from './types';
+import {GET_PROFILE , GET_PROFILES, PROFILE_LOADING, CLEAR_CURRENT_PROFILE, GET_ERRORS, SET_CURRENT_USER} from './types';
 
 //Get current profile
 
 export const getCurrentProfile = () => dispatch => {
     dispatch(setProfileLoading());
-    axios.get('https://schoolsocial-raghu19.c9users.io/api/profile')
+    axios.get('/api/profile')
         .then(res => 
             dispatch({
                 type: GET_PROFILE,
@@ -23,7 +23,7 @@ export const getCurrentProfile = () => dispatch => {
 //Create Profile
 export const createProfile = (profileData, history) => dispatch => {
   axios
-    .post('https://schoolsocial-raghu19.c9users.io/api/profile', profileData)
+    .post('/api/profile', profileData)
     .then(res => history.push('/dashboard'))
     .catch(err =>
       dispatch({
@@ -36,7 +36,7 @@ export const createProfile = (profileData, history) => dispatch => {
 // Add experience
 export const addCompetitions = (expData, history) => dispatch => {
   axios
-    .post('https://schoolsocial-raghu19.c9users.io/api/profile/competition', expData)
+    .post('/api/profile/competition', expData)
     .then(res => history.push('/dashboard'))
     .catch(err =>
       dispatch({
@@ -49,7 +49,7 @@ export const addCompetitions = (expData, history) => dispatch => {
 // Add education
 export const addAchievements = (eduData, history) => dispatch => {
   axios
-    .post('https://schoolsocial-raghu19.c9users.io/api/profile/achievement', eduData)
+    .post('/api/profile/achievement', eduData)
     .then(res => history.push('/dashboard'))
     .catch(err =>
       dispatch({
@@ -62,7 +62,7 @@ export const addAchievements = (eduData, history) => dispatch => {
 // Delete Experience
 export const deleteCompetition = id => dispatch => {
   axios
-    .delete(`https://schoolsocial-raghu19.c9users.io/api/profile/competition/${id}`)
+    .delete(`/api/profile/competition/${id}`)
     .then(res =>
       dispatch({
         type: GET_PROFILE,
@@ -80,7 +80,7 @@ export const deleteCompetition = id => dispatch => {
 // Delete Education
 export const deleteAchievement = id => dispatch => {
   axios
-    .delete(`https://schoolsocial-raghu19.c9users.io/api/profile/achievement/${id}`)
+    .delete(`/api/profile/achievement/${id}`)
     .then(res =>
       dispatch({
         type: GET_PROFILE,
@@ -95,11 +95,49 @@ export const deleteAchievement = id => dispatch => {
     );
 };
 
+// Get all profiles
+export const getProfiles = () => dispatch => {
+  dispatch(setProfileLoading());
+  axios
+    .get('/api/profile/all')
+    .then(res =>
+      dispatch({
+        type: GET_PROFILES,
+        payload: res.data
+      })
+    )
+    .catch(err =>
+      dispatch({
+        type: GET_PROFILES,
+        payload: null
+      })
+    );
+};
+
+// Get profile by handle
+export const getProfileByHandle = handle => dispatch => {
+  dispatch(setProfileLoading());
+  axios
+    .get(`/api/profile/handle/${handle}`)
+    .then(res =>
+      dispatch({
+        type: GET_PROFILE,
+        payload: res.data
+      })
+    )
+    .catch(err =>
+      dispatch({
+        type: GET_PROFILE,
+        payload: null
+      })
+    );
+};
+
 // Delete account & profile
 export const deleteAccount = () => dispatch => {
   if (window.confirm('Are you sure? This can NOT be undone!')) {
     axios
-      .delete('https://schoolsocial-raghu19.c9users.io/api/profile')
+      .delete('/api/profile')
       .then(res =>
         dispatch({
           type: SET_CURRENT_USER,
