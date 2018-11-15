@@ -34,18 +34,16 @@ app.use('/api/users', users);
 app.use('/api/profile', profile);
 app.use('/api/posts', posts);
 
-app.get('*',function (req, res) {
-        res.redirect('/');
-    });
+app.use(express.static(__dirname+ '/client/build'));
 
+  app.get('*', (req, res) => {
+    res.sendFile(__dirname+ '/client/build/index.html');
+  });
+  
 // Server static assets if in production
 if (process.env.NODE_ENV === 'production') {
   // Set static folder
-  app.use(express.static(__dirname+ '/client/build'));
-
-  app.get('/', (req, res) => {
-    res.sendFile(__dirname+ '/client/build/index.html');
-  });
+  
 }
 
 const port = process.env.PORT;
